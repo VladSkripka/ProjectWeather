@@ -37,22 +37,22 @@
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="feelslike" fill="WHITE" layoutX="14.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відчувається:" wrappingWidth="164.513671875">
+      <Text id="feelslike" fill="WHITE" layoutX="14.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відчувається:" wrappingWidth="164.513671875">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="visibility" fill="WHITE" layoutX="14.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимість:" wrappingWidth="164.513671875">
+      <Text id="visibility" fill="WHITE" layoutX="14.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимість:" wrappingWidth="164.513671875">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="probabilityOfRain" fill="WHITE" layoutX="14.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ймовірність дощу:" wrappingWidth="180.0">
+      <Text id="probabilityOfRain" fill="WHITE" layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ймовірність дощу:" wrappingWidth="180.0">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="pressure" fill="WHITE" layoutX="14.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тиск:" wrappingWidth="164.513671875">
+      <Text id="pressure" fill="WHITE" layoutX="14.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тиск:" wrappingWidth="164.513671875">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
