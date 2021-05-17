@@ -20,7 +20,7 @@
       </TextField>
       <AnchorPane layoutY="-8.0" prefHeight="62.0" prefWidth="328.0" style="-fx-background-color: slategray;">
          <children>
-            <Text fill="WHITE" layoutX="59.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник" wrappingWidth="214.849609375">
+            <Text fill="WHITE" layoutX="43.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WeatherApp" wrappingWidth="228.849609375">
                <font>
                   <Font name="Franklin Gothic Demi Cond" size="48.0" />
                </font>
@@ -32,27 +32,27 @@
             <Font name="Franklin Gothic Demi Cond" size="36.0" />
          </font>
       </Text>
-      <Text id="temperature" fill="WHITE" layoutX="14.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="164.513671875">
+      <Text id="temperature" fill="WHITE" layoutX="14.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:" wrappingWidth="250">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="feelslike" fill="WHITE" layoutX="14.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відчувається:" wrappingWidth="164.513671875">
+      <Text id="feelslike" fill="WHITE" layoutX="14.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відчувається:" wrappingWidth="250">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="visibility" fill="WHITE" layoutX="14.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимість:" wrappingWidth="164.513671875">
+      <Text id="visibility" fill="WHITE" layoutX="14.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимість:" wrappingWidth="250">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="probabilityOfRain" fill="WHITE" layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ймовірність дощу:" wrappingWidth="180.0">
+      <Text id="probabilityOfRain" fill="WHITE" layoutX="14.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ймовірність дощу:" wrappingWidth="300">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
       </Text>
-      <Text id="pressure" fill="WHITE" layoutX="14.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тиск:" wrappingWidth="164.513671875">
+      <Text id="pressure" fill="WHITE" layoutX="14.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тиск:" wrappingWidth="250">
          <font>
             <Font name="Franklin Gothic Demi Cond" size="24.0" />
          </font>
