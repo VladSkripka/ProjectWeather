@@ -1,48 +1,83 @@
 package sample;
 
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import org.json.JSONObject;
 
 
 public class Controller {
 
     @FXML
-    public ResourceBundle resources;
+    private ResourceBundle resources;
 
     @FXML
-    public URL location;
+    private URL location;
 
     @FXML
     private Button getData;
 
     @FXML
-    public TextField city;
+    private TextField city;
 
     @FXML
-    public Text temperature;
+    private Text temperature;
 
     @FXML
-    public Text feelslike;
+    private Text feelslike;
 
     @FXML
-    public Text visibility;
+    private Text visibility;
 
     @FXML
-    public Text probablyOfRain;
+    private Text humidity;
 
     @FXML
-    public Text pressure;
+    private Text pressure;
 
     @FXML
     void initialize() {
         getData.setOnAction(actionEvent -> {
-            System.out.print("JR");
+            String usersCity = city.getText().trim();
+            String output = getContent("http://api.openweathermap.org/data/2.5/weather?q="+usersCity+"&appid=9aa56c780cc99d8b8091d128dd348bb2&units=metric");
+
+            if(!output.isEmpty()){
+                JSONObject obj = new JSONObject(output);
+                temperature.setText("Температура: "+obj.getJSONObject("main").getDouble("temp"));
+                feelslike.setText("Відчувається: "+obj.getJSONObject("main").getDouble("feels_like"));
+                visibility.setText("Видимість: "+obj.getDouble("visibility"));
+                humidity.setText("Вологість: "+obj.getJSONObject("main").getDouble("humidity"));
+                pressure.setText("Тиск: "+obj.getJSONObject("main").getDouble("pressure"));
+
+            }
 
         });
     }
+
+    private static String getContent(String urlAdress){
+
+        StringBuffer content = new StringBuffer();
+        try{
+          URL url = new URL (urlAdress);
+          URLConnection urlCon = url.openConnection();
+          BufferedReader bufRead = new BufferedReader(new InputStreamReader(urlCon.getInputStream()));
+          String line;
+          while ((line = bufRead.readLine())!=null){
+              content.append(line + "\n");
+          }
+          bufRead.close();
+        }
+        catch(Exception e){
+            System.out.print("Oh no, problem");
+        }
+        return content.toString();
+    }
+
 }
