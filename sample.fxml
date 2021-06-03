@@ -47,7 +47,7 @@
                 <Font name="Franklin Gothic Demi Cond" size="24.0" />
             </font>
         </Text>
-        <Text fx:id="humidity" fill="WHITE" layoutX="14.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вологість:" wrappingWidth="300">
+        <Text fx:id="humidity" fill="WHITE" layoutX="14.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вологість:" wrappingWidth="300">
             <font>
                 <Font name="Franklin Gothic Demi Cond" size="24.0" />
             </font>
